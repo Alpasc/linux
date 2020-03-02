@@ -1,0 +1,34 @@
+wilder@wilder-ThinkPad-T430:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+wilder@wilder-ThinkPad-T430:~$ pwd
+/home/wilder
+wilder@wilder-ThinkPad-T430:~$ cd images
+bash: cd: images: No such file or directory
+wilder@wilder-ThinkPad-T430:~$ cd pictures
+bash: cd: pictures: No such file or directory
+wilder@wilder-ThinkPad-T430:~$ cd Pictures
+wilder@wilder-ThinkPad-T430:~/Pictures$ pwd
+/home/wilder/Pictures
+wilder@wilder-ThinkPad-T430:~/Pictures$ cd ..
+wilder@wilder-ThinkPad-T430:~$ cd ..
+wilder@wilder-ThinkPad-T430:/home$ cd ..
+wilder@wilder-ThinkPad-T430:/$ ls
+bin    dev   initrd.img      lib64       mnt   root  snap      sys  var
+boot   etc   initrd.img.old  lost+found  opt   run   srv       tmp  vmlinuz
+cdrom  home  lib             media       proc  sbin  swapfile  usr
+wilder@wilder-ThinkPad-T430:/$ cd/home.wilder
+bash: cd/home.wilder: No such file or directory
+wilder@wilder-ThinkPad-T430:/$ cd/home/wilder
+bash: cd/home/wilder: No such file or directory
+wilder@wilder-ThinkPad-T430:/$ cd Pictures
+bash: cd: Pictures: No such file or directory
+wilder@wilder-ThinkPad-T430:/$ pwd
+/
+wilder@wilder-ThinkPad-T430:/$ cd Pictures
+bash: cd: Pictures: No such file or directory
+wilder@wilder-ThinkPad-T430:/$ ~
+bash: /home/wilder: Is a directory
+wilder@wilder-ThinkPad-T430:/$ cd ~
+wilder@wilder-ThinkPad-T430:~$ cd Pictures
+wilder@wilder-ThinkPad-T430:~/Pictures$ cd ~/Music
+wilder@wilder-ThinkPad-T430:~/Music$ 
