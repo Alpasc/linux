@@ -1,0 +1,71 @@
+ planets
+│   ├── fictionnal
+│   │   ├── arrakis.jpeg
+│   │   ├── coruscant.jpeg
+│   │   └── cybertron.jpeg
+│   ├── inhabited
+│   │   ├── arrakis.jpeg
+│   │   ├── coruscant.jpeg
+│   │   ├── cybertron.jpeg
+│   │   └── earth.jpeg
+│   └── real
+│       ├── gas-giants
+│       │   ├── jupiter.jpeg
+│       │   ├── neptune.jpeg
+│       │   ├── saturn.jpeg
+│       │   └── uranus.jpeg
+│       └── telluric
+│           ├── earth.jpeg
+│           ├── mars.jpeg
+│           ├── mercury.jpeg
+│           └── venus.jpeg
+
+52  wget https://github.com/bhubr/bhubr.github.io/raw/master/wild/planets.zip
+   53  unzip planets.zip
+   54  eog planets
+   55  mkdir planets/real planets/fictionnal planets/inhabited
+   56  ls
+   57  mkdir planets/real/telluric planets/real/gas-giants planets/real/dwarf-planets
+   58  mv mercury venus earth mars jupiter saturn uranus neptune real/
+   59  mv mercury venus earth mars jupiter saturn uranus neptune planets/real
+   60  mv mercury* venus* earth* mars* jupiter* saturn* uranus* neptune* planets/real
+   61  mv mercury.jpeg planets/real
+   62  mv planets/mercury.jpeg planets/real
+   63  mv planets/venus planets/real
+   64  mv planets/venus* planets/real
+   65  cd planets
+   66  mv earth* mars* jupiter* saturn* uranus* neptune* planets/real
+   67  mv earth* mars* jupiter* saturn* uranus* neptune* real
+   68  mv pluto* real
+   69  mv arrakis* coruscant* cybertron* fictionnal
+   70  mv fictionnal/arrakis* fictionnal/coruscant* fictionnal/cybertron* real/earth* inhabited
+   71  rm real/pluto
+   72  rm real/pluto*
+   73  tree
+   74  cp inhabited/earth real
+   75  cp inhabited/earth* real
+   76  cd inhabited
+   77  cp arrakis* coruscant* cybertron* planets/fictionnal
+   78  cp arrakis* coruscant* cybertron* planets/fictionnal/
+   79  cd planets
+   80  cd /planets
+   81  cd
+   82  cd planets
+   83  cp inhabited/arrakis* inhabited/coruscant* inhabited/cybertron* fictionnal
+   84  tree
+   85  history
+   86  ls
+   87  cd real/
+   88  ea
+   89  mv jupiter* neptune* saturn* uranus* real/gas-giant
+   90  mv jupiter* neptune* saturn* uranus* gas-giant
+   91  mv jupiter* neptune* saturn* uranus* gas-giants/
+   92  mv earth.jpeg mars.jpeg mercury.jpeg venus.jpeg telluric/
+   93  rm dwarf-planets/
+   94  rm -r dwarf-planets
+   95  tree
+   96  ls
+   97  cd
+   98  tree
+   99  history
+
