@@ -1,0 +1,213 @@
+wilder@wilder-ThinkPad-T430:~$ sudo apt-get install -y tree wget unzip
+[sudo] password for wilder: 
+éSorry, try again.
+[sudo] password for wilder: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+unzip is already the newest version (6.0-21ubuntu1).
+The following NEW packages will be installed:
+  tree
+The following packages will be upgraded:
+  wget
+1 upgraded, 1 newly installed, 0 to remove and 585 not upgraded.
+Need to get 40,7 kB/357 kB of archives.
+After this operation, 105 kB of additional disk space will be used.
+Get:1 http://fr.archive.ubuntu.com/ubuntu bionic/universe amd64 tree amd64 1.7.0-5 [40,7 kB]
+Fetched 40,7 kB in 0s (293 kB/s) 
+(Reading database ... 114813 files and directories currently installed.)
+Preparing to unpack .../wget_1.19.4-1ubuntu2.2_amd64.deb ...
+Unpacking wget (1.19.4-1ubuntu2.2) over (1.19.4-1ubuntu2.1) ...
+Selecting previously unselected package tree.
+Preparing to unpack .../tree_1.7.0-5_amd64.deb ...
+Unpacking tree (1.7.0-5) ...
+Setting up tree (1.7.0-5) ...
+Processing triggers for install-info (6.5.0.dfsg.1-2) ...
+Setting up wget (1.19.4-1ubuntu2.2) ...
+Processing triggers for man-db (2.8.3-2) ...
+wilder@wilder-ThinkPad-T430:~$ ~/quetes.shell
+bash: /home/wilder/quetes.shell: No such file or directory
+wilder@wilder-ThinkPad-T430:~$ ~quetes/shell
+bash: ~quetes/shell: No such file or directory
+wilder@wilder-ThinkPad-T430:~$ ~/quetes/shell
+bash: /home/wilder/quetes/shell: Is a directory
+wilder@wilder-ThinkPad-T430:~$ wget https://github.com/bhubr/bhubr.github.io/raw/master/wild/planets.zip
+--2020-03-03 10:25:46--  https://github.com/bhubr/bhubr.github.io/raw/master/wild/planets.zip
+Resolving github.com (github.com)... 140.82.118.3
+Connecting to github.com (github.com)|140.82.118.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/bhubr/bhubr.github.io/master/wild/planets.zip [following]
+--2020-03-03 10:25:46--  https://raw.githubusercontent.com/bhubr/bhubr.github.io/master/wild/planets.zip
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.192.133, 151.101.128.133, 151.101.64.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.192.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 300234 (293K) [application/zip]
+Saving to: ‘planets.zip’
+
+planets.zip         100%[===================>] 293,20K  1,83MB/s    in 0,2s    
+
+2020-03-03 10:25:47 (1,83 MB/s) - ‘planets.zip’ saved [300234/300234]
+
+wilder@wilder-ThinkPad-T430:~$ unzip planets.zip
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg    
+  inflating: planets/earth.jpeg      
+  inflating: planets/pluto.jpeg      
+  inflating: planets/arrakis.jpeg    
+  inflating: planets/jupiter.jpeg    
+  inflating: planets/venus.jpeg      
+  inflating: planets/mars.jpeg       
+  inflating: planets/cybertron.jpeg  
+  inflating: planets/coruscant.jpeg  
+  inflating: planets/uranus.jpeg     
+  inflating: planets/neptune.jpeg    
+  inflating: planets/saturn.jpeg     
+wilder@wilder-ThinkPad-T430:~$ eog planets
+mkdir planets/real planets/fictionnal planets/inhabited
+ls
+wilder@wilder-ThinkPad-T430:~$ mkdir planets/real planets/fictionnal planets/inhabited
+wilder@wilder-ThinkPad-T430:~$ ls
+Desktop    Downloads  Pictures  planets.zip  quetes     Videos
+Documents  Music      planets   Public       Templates
+wilder@wilder-ThinkPad-T430:~$ mkdir planets/real/telluric planets/real/gas-giants planets/real/dwarf-planets
+wilder@wilder-ThinkPad-T430:~$ mv mercury venus earth mars jupiter saturn uranus neptune real/
+mv: target 'real/' is not a directory
+wilder@wilder-ThinkPad-T430:~$ mv mercury venus earth mars jupiter saturn uranus neptune planets/real
+mv: cannot stat 'mercury': No such file or directory
+mv: cannot stat 'venus': No such file or directory
+mv: cannot stat 'earth': No such file or directory
+mv: cannot stat 'mars': No such file or directory
+mv: cannot stat 'jupiter': No such file or directory
+mv: cannot stat 'saturn': No such file or directory
+mv: cannot stat 'uranus': No such file or directory
+mv: cannot stat 'neptune': No such file or directory
+wilder@wilder-ThinkPad-T430:~$ mv mercury venus earth mars jupiter saturn uranus neptune planets/real
+mv: cannot stat 'mercury': No such file or directory
+mv: cannot stat 'venus': No such file or directory
+mv: cannot stat 'earth': No such file or directory
+mv: cannot stat 'mars': No such file or directory
+mv: cannot stat 'jupiter': No such file or directory
+mv: cannot stat 'saturn': No such file or directory
+mv: cannot stat 'uranus': No such file or directory
+mv: cannot stat 'neptune': No such file or directory
+wilder@wilder-ThinkPad-T430:~$ mv mercury* venus* earth* mars* jupiter* saturn* uranus* neptune* planets/real
+mv: cannot stat 'mercury*': No such file or directory
+mv: cannot stat 'venus*': No such file or directory
+mv: cannot stat 'earth*': No such file or directory
+mv: cannot stat 'mars*': No such file or directory
+mv: cannot stat 'jupiter*': No such file or directory
+mv: cannot stat 'saturn*': No such file or directory
+mv: cannot stat 'uranus*': No such file or directory
+mv: cannot stat 'neptune*': No such file or directory
+wilder@wilder-ThinkPad-T430:~$ mv mercury.jpeg planets/real
+mv: cannot stat 'mercury.jpeg': No such file or directory
+wilder@wilder-ThinkPad-T430:~$ mv planets/mercury.jpeg planets/real
+wilder@wilder-ThinkPad-T430:~$ mv planets/venus planets/real
+mv: cannot stat 'planets/venus': No such file or directory
+wilder@wilder-ThinkPad-T430:~$ mv planets/venus* planets/real
+wilder@wilder-ThinkPad-T430:~$ cd planets
+wilder@wilder-ThinkPad-T430:~/planets$ mv earth* mars* jupiter* saturn* uranus* neptune* planets/real
+mv: target 'planets/real' is not a directory
+wilder@wilder-ThinkPad-T430:~/planets$ mv earth* mars* jupiter* saturn* uranus* neptune* real
+wilder@wilder-ThinkPad-T430:~/planets$ mv pluto* real
+wilder@wilder-ThinkPad-T430:~/planets$ mv arrakis* coruscant* cybertron* fictionnal
+wilder@wilder-ThinkPad-T430:~/planets$ mv fictionnal/arrakis* fictionnal/coruscant* fictionnal/cybertron* real/earth* inhabited
+wilder@wilder-ThinkPad-T430:~/planets$ rm real/pluto
+rm: cannot remove 'real/pluto': No such file or directory
+wilder@wilder-ThinkPad-T430:~/planets$ rm real/pluto*
+wilder@wilder-ThinkPad-T430:~/planets$ tree
+.
+├── fictionnal
+├── inhabited
+│   ├── arrakis.jpeg
+│   ├── coruscant.jpeg
+│   ├── cybertron.jpeg
+│   └── earth.jpeg
+└── real
+    ├── dwarf-planets
+    ├── gas-giants
+    ├── jupiter.jpeg
+    ├── mars.jpeg
+    ├── mercury.jpeg
+    ├── neptune.jpeg
+    ├── saturn.jpeg
+    ├── telluric
+    ├── uranus.jpeg
+    └── venus.jpeg
+
+6 directories, 11 files
+wilder@wilder-ThinkPad-T430:~/planets$ cp inhabited/earth real
+cp: cannot stat 'inhabited/earth': No such file or directory
+wilder@wilder-ThinkPad-T430:~/planets$ cp inhabited/earth* real
+wilder@wilder-ThinkPad-T430:~/planets$ cd inhabited
+wilder@wilder-ThinkPad-T430:~/planets/inhabited$ cp arrakis* coruscant* cybertron* planets/fictionnal
+cp: target 'planets/fictionnal' is not a directory
+wilder@wilder-ThinkPad-T430:~/planets/inhabited$ cp arrakis* coruscant* cybertron* planets/fictionnal/
+cp: target 'planets/fictionnal/' is not a directory
+wilder@wilder-ThinkPad-T430:~/planets/inhabited$ cd planets
+bash: cd: planets: No such file or directory
+wilder@wilder-ThinkPad-T430:~/planets/inhabited$ cd /planets
+bash: cd: /planets: No such file or directory
+wilder@wilder-ThinkPad-T430:~/planets/inhabited$ cd
+wilder@wilder-ThinkPad-T430:~$ cd planets
+wilder@wilder-ThinkPad-T430:~/planets$ cp inhabited/arrakis* inhabited/coruscant* inhabited/cybertron* fictionnal
+wilder@wilder-ThinkPad-T430:~/planets$ tree
+.
+├── fictionnal
+│   ├── arrakis.jpeg
+│   ├── coruscant.jpeg
+│   └── cybertron.jpeg
+├── inhabited
+│   ├── arrakis.jpeg
+│   ├── coruscant.jpeg
+│   ├── cybertron.jpeg
+│   └── earth.jpeg
+└── real
+    ├── dwarf-planets
+    ├── earth.jpeg
+    ├── gas-giants
+    ├── jupiter.jpeg
+    ├── mars.jpeg
+    ├── mercury.jpeg
+    ├── neptune.jpeg
+    ├── saturn.jpeg
+    ├── telluric
+    ├── uranus.jpeg
+    └── venus.jpeg
+
+6 directories, 15 files
+wilder@wilder-ThinkPad-T430:~/planets$ 
+
+54  eog planets
+   55  mkdir planets/real planets/fictionnal planets/inhabited
+   56  ls
+   57  mkdir planets/real/telluric planets/real/gas-giants planets/real/dwarf-planets
+   58  mv mercury venus earth mars jupiter saturn uranus neptune real/
+   59  mv mercury venus earth mars jupiter saturn uranus neptune planets/real
+   60  mv mercury* venus* earth* mars* jupiter* saturn* uranus* neptune* planets/real
+   61  mv mercury.jpeg planets/real
+   62  mv planets/mercury.jpeg planets/real
+   63  mv planets/venus planets/real
+   64  mv planets/venus* planets/real
+   65  cd planets
+   66  mv earth* mars* jupiter* saturn* uranus* neptune* planets/real
+   67  mv earth* mars* jupiter* saturn* uranus* neptune* real
+   68  mv pluto* real
+   69  mv arrakis* coruscant* cybertron* fictionnal
+   70  mv fictionnal/arrakis* fictionnal/coruscant* fictionnal/cybertron* real/earth* inhabited
+   71  rm real/pluto
+   72  rm real/pluto*
+   73  tree
+   74  cp inhabited/earth real
+   75  cp inhabited/earth* real
+   76  cd inhabited
+   77  cp arrakis* coruscant* cybertron* planets/fictionnal
+   78  cp arrakis* coruscant* cybertron* planets/fictionnal/
+   79  cd planets
+   80  cd /planets
+   81  cd
+   82  cd planets
+   83  cp inhabited/arrakis* inhabited/coruscant* inhabited/cybertron* fictionnal
+   84  tree
+   85  history
